@@ -1,1 +1,3 @@
 Se puede hacer un thread.getPriority() y un thread.setPriority() que va del 1 al 10.
+
+Poner Syncronized en un método hace que este sea ejecutado solo de una vez en una vez aunque lo llames de varios hilos.
