@@ -1,4 +1,4 @@
-package PruebasJava.Arrays;
+package HS.SimpleJava.Arrays;
 
 public class PruebaForEach {
     public static void main(String[] args) {

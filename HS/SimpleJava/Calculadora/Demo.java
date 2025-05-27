@@ -1,3 +1,4 @@
+package HS.SimpleJava.Calculadora;
 class Calculadora {
     
     int a = 0;

@@ -1,4 +1,4 @@
-package PruebasJava.Ternario;
+package HS.SimpleJava.Ternario;
 
 class TernarioDemo {
     public static void main(String a[]) {

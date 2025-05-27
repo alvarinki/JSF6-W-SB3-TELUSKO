@@ -1,3 +1,4 @@
+package HS.SimpleJava.Arrays;
 public class Jagged {
     //Matriz jagged o dentada. Una matriz que no es cuadrada
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package PruebasJava.ObjectinVSCode;
+package HS.SimpleJava.ObjectinVSCode;
 
 class Calculator {
     

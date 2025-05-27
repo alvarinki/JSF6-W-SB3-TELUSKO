@@ -1,4 +1,4 @@
-package PruebasJava.Arrays;
+package HS.SimpleJava.Arrays;
 
 // Source code is decompiled from a .class file using FernFlower decompiler.
 class Bidimensional {
