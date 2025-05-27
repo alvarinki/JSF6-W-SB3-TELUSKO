@@ -1,3 +1,4 @@
+package WS.AdvancedJava.Classes;
 
 enum Status{
     PENDING,

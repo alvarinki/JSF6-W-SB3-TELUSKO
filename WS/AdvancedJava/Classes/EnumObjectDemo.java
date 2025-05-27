@@ -1,3 +1,5 @@
+package WS.AdvancedJava.Classes;
+
 enum EnumObject {
     MacOS("Mac OS X", "10.15"),
     Windows("Windows", "10"),

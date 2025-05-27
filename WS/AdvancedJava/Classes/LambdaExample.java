@@ -1,3 +1,5 @@
+package WS.AdvancedJava.Classes;
+
 public class LambdaExample {
     public static void main(String[] args) {
         A obj = (i, j) -> i+j;

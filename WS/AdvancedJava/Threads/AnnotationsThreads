@@ -1,0 +1,1 @@
+Se puede hacer un thread.getPriority() y un thread.setPriority() que va del 1 al 10.

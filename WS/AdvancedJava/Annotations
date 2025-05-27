@@ -8,5 +8,7 @@ Si quiero tener por seguro que va a ser una, puedo añadir @FunctionalInterface 
 
 Marqer --> ¿Para serializaciones? (Explicaciones al compilador)
 
-Las excepciones se utilizan para manejar los Runtime Errors.
+Las excepciones se utilizan para manejar los Runtime Errors. 
+Finally utilizado normalmente para cerrar los bufferedReader, InputReader... etc.
+Si metes en el try la creación de estos objetos ya no hace falta meterlo en el finally, se cierra solo. 
 

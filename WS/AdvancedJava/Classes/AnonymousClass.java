@@ -1,8 +1,12 @@
-abstract class A{
-    public abstract void show();
+package WS.AdvancedJava.Classes;
+
+class A{
+    public void show(){
+        System.out.println("A's show method");
+    }
 }
 
-public class AbstractAnonymousClass {
+public class AnonymousClass {
     public static void main(String[] args) {
         // Creating an anonymous class that extends A
         A a = new A() {

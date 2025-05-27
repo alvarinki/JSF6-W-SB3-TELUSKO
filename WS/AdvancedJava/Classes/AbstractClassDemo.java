@@ -1,3 +1,5 @@
+package WS.AdvancedJava.Classes;
+
 public class AbstractClassDemo {
     public static void main(String[] args) {
         // Creating an instance of WagonR
