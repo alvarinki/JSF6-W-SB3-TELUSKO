@@ -1,0 +1,14 @@
+Tipos de interfaces
+
+Normal --> Dos o más métodos normales.
+
+Functional/SAM (Single Abstract Method) -->  Un método abstracto
+Si quiero tener por seguro que va a ser una, puedo añadir @FunctionalInterface encima de la clase interface.
+
+
+Marqer --> ¿Para serializaciones? (Explicaciones al compilador)
+
+Las excepciones se utilizan para manejar los Runtime Errors. 
+Finally utilizado normalmente para cerrar los bufferedReader, InputReader... etc.
+Si metes en el try la creación de estos objetos ya no hace falta meterlo en el finally, se cierra solo. 
+
