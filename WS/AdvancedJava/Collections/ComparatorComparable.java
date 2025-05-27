@@ -5,6 +5,41 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+class Student implements Comparable<Student> {
+    int age;
+    String name;
+
+    //Constructor y getters y setters
+    public Student (int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    @Override
+    public int compareTo(Student o) {
+        if(this.age>o.age){
+            return 1;
+        } else if(this.age<o.age){
+            return -1;
+        } else {
+            return 0;
+        }
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+    }
+}
+
 public class ComparatorComparable {
     public static void main(String[] args) {
 
