@@ -1,0 +1,15 @@
+Stream.reduce() es un método que no conocía. Puede funcionar para realizar una suma, concatenar los resultados o incluso obtener el máximo, mínimo... de un stream.
+Ejemplos:
+
+OBTENER EL MÁXIMO DE UN STREAM 
+Optional<Integer> max = numbers.stream().reduce((a, b) -> a > b ? a : b);
+max.ifPresent(System.out::println); // Imprime el máximo
+
+CONCATENAR STRINGS 
+List<String> words = Arrays.asList("Hola", "Mundo");
+String result = words.stream().reduce("", (a, b) -> a + " " + b);
+// Resultado: " Hola Mundo"
+
+//parallelStream se ejecuta más rápido que stream a secas
+
+
