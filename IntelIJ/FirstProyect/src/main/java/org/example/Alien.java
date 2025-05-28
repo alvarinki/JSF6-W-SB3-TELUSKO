@@ -21,6 +21,6 @@ public class Alien {
 
     private String tech;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     private List<Laptop> laptops;
 }
