@@ -1,3 +1,5 @@
 La configuración de fetchType=EAGLE en un enlace entre clases hace que aunque no lo solicite yo hibernate haga el select
 de la clase con las clases que tenga dentro relacionadas (manytomany y tal). Lazy es por defecto y hace lo contrario, no lo carga
 hasta que se le pida.
+
+El método session.Load() funciona si utilizas la clase que solicitas, sino no hace el select.

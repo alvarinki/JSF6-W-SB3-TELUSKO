@@ -15,9 +15,6 @@ public class Laptop {
     @Id
     private Long lid;
 
-    @ManyToMany(mappedBy = "laptops")
-    private List<Alien> aliens;
-
     private String brand;
     private String model;
     private int ram;

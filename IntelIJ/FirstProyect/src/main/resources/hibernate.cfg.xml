@@ -4,7 +4,7 @@
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3316/pruebasspf</property>
         <property name="hibernate.connection.username">cecoma8</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
         <property name="hibernate.show_sql">true</property>
     </session-factory>

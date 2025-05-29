@@ -1,0 +1,3 @@
+Cuando incluyo una clase en un bean del ClassPathXML hay que añadir la variable scope=prototype si es que quiero más de una instancia de la clase.
+En caso de querer una clase "estática" por así decirlo, es decir que si llamo al bean me traiga siempre la misma instancia, puedo no añadir scope o
+añadir scope=singleton.
