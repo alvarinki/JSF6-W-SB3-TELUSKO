@@ -8,8 +8,8 @@ import lombok.Setter;
 
 public class Person {
 
-    int age;
-    Laptop lap;
+    private int age;
+    private Computer com;
 
     public void code() {
         System.out.println("I am coding in Java!");
@@ -19,8 +19,14 @@ public class Person {
         System.out.println("Person constructor called");
     }
 
-    public Person (int age) {
+//    public Person (int age) {
+//        this.age = age;
+//        System.out.println("Person constructor with parameters called");
+//    }
+
+    public Person(Laptop lap, int age) {
+        this.lap = lap;
         this.age = age;
-        System.out.println("Person constructor with parameters called");
+        System.out.println("Person constructor with Laptop and age called");
     }
 }

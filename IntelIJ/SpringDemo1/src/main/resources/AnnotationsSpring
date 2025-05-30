@@ -1,3 +1,13 @@
 Cuando incluyo una clase en un bean del ClassPathXML hay que añadir la variable scope=prototype si es que quiero más de una instancia de la clase.
 En caso de querer una clase "estática" por así decirlo, es decir que si llamo al bean me traiga siempre la misma instancia, puedo no añadir scope o
 añadir scope=singleton.
+
+Si tengo un bean como el de este caso con unos argumentos pre-cargados:
+<bean id="Person" class="org.acf.Person" scope="singleton">
+        <constructor-arg value="21"/>
+        <constructor-arg ref="lap1"/>
+</bean>
+
+Necesito que los constructor-arg estén en el orden en el que se han escrito en la clase, que se utilice "type" para utilizarlo,
+"index" para indicar la posición en la secuencia del constructor o "name" para indicar el nombre del argumento.
+También se puede usar @ConstructorProperties en la clase para indicar el orden y nombre de los argumentos del constructor.

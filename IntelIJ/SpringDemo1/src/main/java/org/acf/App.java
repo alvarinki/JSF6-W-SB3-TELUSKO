@@ -13,7 +13,7 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Person person = (Person) context.getBean("Person");
-        System.out.println("Person age: " + person.age);
+        System.out.println("Person age: " + person.getAge());
         person.code();
     }
 }
