@@ -11,3 +11,7 @@ Si tengo un bean como el de este caso con unos argumentos pre-cargados:
 Necesito que los constructor-arg estén en el orden en el que se han escrito en la clase, que se utilice "type" para utilizarlo,
 "index" para indicar la posición en la secuencia del constructor o "name" para indicar el nombre del argumento.
 También se puede usar @ConstructorProperties en la clase para indicar el orden y nombre de los argumentos del constructor.
+
+La propiedad Lazy-init=true hace que el bean no se cargue hasta que lo necesitemos, es decir, que no se cargue al inicio de la aplicación sino cuando yo lo cree.
+Si tienes un bean lazy dentro de un bean eager este se creará cuando el bean eager se cree, no cuando se necesite.
+

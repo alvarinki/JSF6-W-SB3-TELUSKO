@@ -5,16 +5,21 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="Person" class="org.acf.Person" scope="singleton">
-        <constructor-arg value="21"/>
-        <constructor-arg ref="lap1"/>
-<!--        <property name="lap" ref="lap1"/>  -->
+    <bean id="Person" class="org.acf.Person" autowire="byType" scope="singleton">
+        <property name="age" value="21"/>
+        <property name="com">
+            <bean id="com1" class="org.acf.Laptop"> </bean>
+        </property>
 
     </bean>
-    <bean id="lap1" class="org.acf.Laptop">
+    <!--        Se puede hacer byType y byName pero entonces no puedes tener dos iguales-->
+<!--    Si es byType y hay dos iguales, Spring no sabe cuál inyectar, por lo que puedes usar el atributo primary="true"-->
+<!--    y property="name" para que se inyecte el bean con ese nombre o los que necesites.-->
+<!--    También se puede especificar en un property la referencia al bean y seguir haciendo el byType.-->
+    <!--        <constructor-arg value="21"/>-->
+    <!--        <constructor-arg ref="lap1"/>-->
 
-    </bean>
-    <bean id="lap2" class="org.acf.Laptop">
 
-    </bean>
+<!--    <bean id="com1" class="org.acf.Laptop"> </bean>-->
+    <bean id="com2" class="org.acf.Desktop" lazy-init="true"> </bean>
 </beans>
