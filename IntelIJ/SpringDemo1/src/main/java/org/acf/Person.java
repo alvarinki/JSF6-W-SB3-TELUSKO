@@ -12,7 +12,8 @@ public class Person {
     private Computer com;
 
     public void code() {
-        System.out.println("I am coding in Java!");
+        System.out.println("I am coding!");
+        com.compile();
     }
 
     public Person() {
@@ -24,9 +25,9 @@ public class Person {
 //        System.out.println("Person constructor with parameters called");
 //    }
 
-    public Person(Laptop lap, int age) {
-        this.lap = lap;
-        this.age = age;
-        System.out.println("Person constructor with Laptop and age called");
-    }
+//    public Person(Laptop lap, int age) {
+//        this.lap = lap;
+//        this.age = age;
+//        System.out.println("Person constructor with Laptop and age called");
+//    }
 }
