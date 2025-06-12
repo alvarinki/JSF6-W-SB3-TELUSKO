@@ -15,9 +15,16 @@ public class App
     {
         ApplicationContext context= new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Desktop dt = context.getBean("desktop", Desktop.class);
-        System.out.println("Got it!!");
-        dt.compile();
+        Person person1= context.getBean("person", Person.class);
+        //person1.setAge(21);
+        System.out.println("Person age: " + person1.getAge());
+        person1.code();
+
+//        Desktop dt = context.getBean("desktop", Desktop.class);
+//        dt.compile();
+//
+//        Desktop dt1 = context.getBean("desktop", Desktop.class);
+//        dt1.compile();
     }
 }
 
